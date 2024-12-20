@@ -36,6 +36,7 @@ export class LoginComponent {
 
   submitForm(): void {
     if (this.loginForm.valid) {
+      console.log(this.loginForm.value)
       this.authService.login(this.loginForm.value)
         .then(res => {
           console.log(res)
