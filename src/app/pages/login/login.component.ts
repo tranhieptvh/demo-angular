@@ -39,6 +39,7 @@ export class LoginComponent {
       this.authService.login(this.loginForm.value)
         .then(res => {
           console.log(res)
+          this.router.navigate(['/welcome']);
         })
         .catch(err => {
           console.log(err)
