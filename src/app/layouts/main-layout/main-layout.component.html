@@ -6,7 +6,7 @@
             [(nzCollapsed)]="isCollapsed"
             [nzTrigger]="null">
     <div class="sidebar-logo">
-      <a href="https://ng.ant.design/" target="_blank">
+      <a href="">
         <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
         <h1>Ant Design Of Angular</h1>
       </a>
@@ -43,6 +43,21 @@
                   [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
             ></span>
         </span>
+
+        <div>
+          <div class="header-language">
+            <div nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+              {{ currentLanguage == 'vi' ? ('vietnamese' | translate) : ('english' | translate) }}
+              <span nz-icon nzType="down"></span>
+            </div>
+            <nz-dropdown-menu #menu="nzDropdownMenu">
+              <ul nz-menu>
+                <li nz-menu-item (click)="switchLanguage('vi')">{{ 'vietnamese' | translate }}</li>
+                <li nz-menu-item (click)="switchLanguage('en')">{{ 'english' | translate }}</li>
+              </ul>
+            </nz-dropdown-menu>
+          </div>
+        </div>
       </div>
     </nz-header>
     <nz-content>

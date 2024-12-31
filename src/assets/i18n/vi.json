@@ -1,0 +1,12 @@
+{
+  "hello": "Xin chào!",
+  "welcome": "Chào mừng bạn đến với ứng dụng của tôi!",
+  "vietnamese": "Tiếng Việt",
+  "english": "Tiếng Anh",
+  "toast": {
+    "success": "Thành công",
+    "error": "Lỗi",
+    "info": "Thông tin",
+    "warning": "Cảnh báo"
+  }
+}

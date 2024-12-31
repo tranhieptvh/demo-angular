@@ -21,7 +21,7 @@ export class AuthService extends HttpService {
 
       // Fake API logic
       setTimeout(() => {
-        if (email === 'test@example.com' && password === 'password123') {
+        if (email === 'hieptv' && password === '123') {
           resolve({
             token: 'fake-jwt-token',
             user: {

@@ -3,4 +3,7 @@
 <p>name: {{ data.name }}</p>
 <p>age: {{ data.age }}</p>
 
-<app-table [propData]="data"></app-table>
+<app-table
+  [propData]="data"
+  (emitHandleClickButton)="handleClickButton()"
+></app-table>

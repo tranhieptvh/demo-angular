@@ -8,6 +8,7 @@ import {
   ReactiveFormsModule,
   Validators
 } from '@angular/forms';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-welcome',
@@ -15,7 +16,8 @@ import {
   templateUrl: './welcome.component.html',
   imports: [
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslatePipe
   ],
   styleUrls: ['./welcome.component.css']
 })

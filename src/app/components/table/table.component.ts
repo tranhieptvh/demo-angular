@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output, SimpleChanges} from '@angular/core';
 import {dataType} from '../../../types';
 
 @Component({
@@ -13,4 +13,15 @@ export class TableComponent {
     name: '',
     age: 0,
   };
+
+  @Output() emitHandleClickButton = new EventEmitter();
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes)
+  }
+
+  handleClickButton() {
+    this.emitHandleClickButton.emit();
+  }
+
 }

@@ -1,0 +1,12 @@
+{
+  "hello": "Hello!",
+  "welcome": "Welcome to my application!",
+  "vietnamese": "Vietnamese",
+  "english": "English",
+  "toast": {
+    "success": "Success",
+    "error": "Error",
+    "info": "Information",
+    "warning": "Warning"
+  }
+}
